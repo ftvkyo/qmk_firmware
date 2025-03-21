@@ -1,0 +1,13 @@
+#pragma once
+
+#define LED_USER C13
+
+#ifdef AUDIO_ENABLE
+# define AUDIO_PIN A4
+# define AUDIO_STATE_TIMER GPTD3
+# define CAPS_SOUND S__NOTE(_A3), S__NOTE(_B3),
+# define DIRS_SOUND T__NOTE(_C2)
+#endif
+
+#define KEYNCODER_THRESHOLD_X2 100
+#define KEYNCODER_THRESHOLD_X3 50
